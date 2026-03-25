@@ -1,0 +1,154 @@
+# ============================================
+# Kinva Master Bot - Git Ignore File
+# Author: @funnytamilan
+# Version: 3.0
+# ============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment
+.env
+.env.local
+.env.production
+.env.development
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+bot.log
+error.log
+admin.log
+payment.log
+access.log
+performance.log
+
+# Temporary files
+temp/
+temp/*
+uploads/
+uploads/*
+outputs/
+outputs/*
+*.tmp
+*.temp
+*.cache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Flask
+instance/
+.webassets-cache
+.env
+
+# Docker
+.dockerignore
+
+# Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Outputs
+outputs/*
+!outputs/.gitkeep
+
+# Temp
+temp/*
+!temp/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Static files
+static/css/*
+!static/css/.gitkeep
+static/js/*
+!static/js/.gitkeep
+
+# Templates
+templates/*
+!templates/.gitkeep
+
+# Secrets
+*.key
+*.pem
+*.crt
+*.p12
+secrets/
+config.local.py
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Python tools
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Render
+.render/
