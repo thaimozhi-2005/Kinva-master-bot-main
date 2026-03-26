@@ -41,9 +41,18 @@ RUN if [ -f /etc/ImageMagick-6/policy.xml ]; then \
 # Copy requirements
 COPY requirements.txt .
 
-# Install Python dependencies (without OpenCV first)
+# Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir numpy pillow python-telegram-bot Flask Flask-SocketIO pymongo redis python-dotenv requests moviepy
+    pip install --no-cache-dir \
+        numpy==1.24.3 \
+        Pillow==10.0.1 \
+        imageio==2.31.1 \
+        imageio-ffmpeg==0.4.9 \
+        decorator==4.4.2 \
+        proglog==0.1.10 \
+        tqdm==4.65.0 \
+        moviepy==1.0.3 && \
+    pip install --no-cache-dir -r requirements.txt
 
 # Create directories
 RUN mkdir -p temp uploads outputs logs static/css static/js templates fonts
